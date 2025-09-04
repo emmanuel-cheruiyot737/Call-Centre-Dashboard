@@ -1,0 +1,46 @@
+ creating data table
+
+	Date Table = CALENDAR(MIN('Call Center_Call Center'[Call Timestamp]),MAX('Call Center_Call Center'[Call Timestamp]))
+
+ creating day field column
+
+	day = FORMAT('Date Table'[Date],"ddd")
+
+creating KPIs
+
+ 1. total number of calls using id column
+
+ 	Total Calls = count('Call Center_Call Center'[Id])
+
+ 2. Total Call duration in Hours
+
+ 	Tatal Call Duration (Hrs) = [Total Call duration (min)]/60
+ 	
+ 3. Total Call Duration in Minutes
+
+ 	Total Call duration (min) = SUM('Call Center_Call Center'[Call Duration In Minutes])
+
+ 4. Average Call Duration in minutes
+	
+ 
+ 5. Response Time 
+
+      problem statement
+
+    1. column chart
+	day on x axis and tatols calls on y axis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
